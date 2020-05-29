@@ -1,0 +1,22 @@
+.Accordion {
+    color: black;
+    font-size: 12px;
+    margin-top: 5px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.CardBody {
+    text-align: left;
+    max-width: 485px;
+}
+
+.NothingFound {
+    color: white;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    max-width: 570px;
+}
