@@ -1,17 +1,20 @@
 .App {
-  text-align: center;
   padding-top: 40px;
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
+}
+/* TODO make better use of the space on bigger screens, especially for the algolia search results */
+
+html {
+  scroll-behavior: smooth;
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 18vmin;
   pointer-events: none;
 }
 
@@ -22,15 +25,13 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #0096db;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
-
-h3 {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-left: 5px;
-  max-width: 570px;
+.App-link:hover,
+.App-link:focus {
+  color: #0073a8;
 }
 
 @keyframes App-logo-spin {
@@ -40,4 +41,26 @@ h3 {
   to {
     transform: rotate(20deg);
   }
+}
+
+.AppSection--Intro {
+  display: flex;
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+
+p {
+  padding-top: 5px;
+  color: #787d81;
+}
+
+.AppSection {
+  max-width: 800px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }

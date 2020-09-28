@@ -1,0 +1,60 @@
+.ais-Highlight,
+.ais-Snippet {
+  color: black; }
+
+.ais-SearchBox { margin: 1em 0; }
+.ais-Pagination { margin-top: 1em }
+
+.AppSection--Search {
+  display: flex;
+}
+
+.ais-InstantSearch { max-width: 960px; overflow: hidden; margin: 0 auto }
+.ais-Hits-item { margin-bottom: 1em; width: calc(50% - 1rem) }
+.hit-name { margin-bottom: .5em }
+
+.hit-description { font-size: 5px; margin-bottom: .5em }
+
+.hit-description .ais-Highlight {
+  line-height: 1.2;
+  color: rgb(85, 85, 85);
+}
+
+.panels {
+  display: flex;
+}
+.left-panel { min-width: 150px; margin-right: 10px; display: flex; flex-direction: column;}
+
+.ais-RefinementList-checkbox {
+  margin-right: 5px;
+  vertical-align: -1.1px;
+}
+
+.ais-NumericMenu-radio {
+  margin-right: 5px;
+  vertical-align: -1.1px;
+}
+
+@media (max-width: 600px) {
+  .ais-Hits-list {
+    margin-left: 0;
+  }
+
+  .ais-Hits-item {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .panels {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    flex-direction: row;
+  }
+
+  .dates-panel {
+    margin-right: 20px;
+  }
+}
